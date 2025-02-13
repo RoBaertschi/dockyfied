@@ -4,7 +4,7 @@ import { logger } from 'hono/logger';
 import BaseDocument from './BaseDocument';
 
 function ImageButton() {
-    return <button hx-get='/image' hx-target='this' hx-swap="outerHTML">See Image</button>;
+    return <button hx-get='/image' hx-target='this' hx-swap="outerHTML">See Meme</button>;
 }
 
 const app = new Hono();
@@ -31,7 +31,7 @@ app.get(
                 <p>&uarr;</p>
                 <p>Click the image above to replace with the button again.</p>
                 <br />
-                <p id='secret' hx-swap='outerHTML' hx-get='/image2'>Another image?</p>
+                <p id='secret' hx-swap='outerHTML' hx-get='/image2'>Another Meme?</p>
             </div>
         );
     }

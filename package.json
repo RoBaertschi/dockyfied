@@ -1,7 +1,8 @@
 {
   "name": "dockyfied",
   "scripts": {
-    "dev": "bun run --watch src/index.tsx"
+    "dev": "bun run --watch src/index.tsx",
+    "build": "bun build src/index.tsx --outdir ./build --splitting"
   },
   "dependencies": {
     "hono": "^4.7.1"
